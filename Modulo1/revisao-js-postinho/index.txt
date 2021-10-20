@@ -93,7 +93,7 @@ const nome = "Amanda"
 const vacina = "coronavac"
 
 if(vacina.tolowerCase()=== "coronavac"){
-    tempo = 3o
+    tempo = 30
 } else if
 (vacina.tolowerCase ()=== "astrazenica"){
     tempo = 90
