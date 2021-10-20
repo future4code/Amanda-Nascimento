@@ -73,24 +73,40 @@ console.log(cadastro());
 // Exercício 4-----------------------------------------------------------------------------------------------
 
 const login = () => {
-    const login = "labenu"
-
-    
-    //  Sua lógica aqui.
+const login = "lunnamaria"
+const senha = prompt("maria123")
+if(maria123 ===lunnamaria)
+console.log()
+else console.log("senha invalida")
 
 }
 
-console.log(login());
+console.log(login ${lunnamaria},senha ${lunna123}));
 
 // Exercício 5----------------------------------------------------------------------------------------------------
 
 const primeiraDose = () => {
+let tempo = 0
+let data = new Date ()
 
-    //  Sua lógica aqui
+const nome = "Amanda"
+const vacina = "coronavac"
 
-
+if(vacina.tolowerCase()=== "coronavac"){
+    tempo = 3o
+} else if
+(vacina.tolowerCase ()=== "astrazenica"){
+    tempo = 90
+}else if (vacina.tolowerCase()==="para){
+    tempo = 90                                                                                                                                                                                                  
 }
-console.log(primeiraDose())
+const milissegundosdia = 86400000
+const hoje = data.getTime(26/01/2021) 
+const dataAtualizada = new Date(hoje +(tempo * milissegundosdia))
+const dataFormatada = dataAtualizada.toLocalDateString("pt-br")
+return 'Olá ${Amanda}! A primeira dose da ${coronavac} é daqui a ${30} dias.compareça no posto da data ${26/01/2021}
+}
+console.log(primeiraDose(toLocalDateString))
 
 
 // LOOP+CONDICIONAL
