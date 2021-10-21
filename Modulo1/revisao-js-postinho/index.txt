@@ -106,7 +106,7 @@ const dataAtualizada = new Date(hoje +(tempo * milissegundosdia))
 const dataFormatada = dataAtualizada.toLocalDateString("pt-br")
 return 'Olá ${Amanda}! A primeira dose da ${coronavac} é daqui a ${30} dias.compareça no posto da data ${26/01/2021}
 }
-console.log(primeiraDose(toLocalDateString))
+console.log(primeiraDose(toLocalDateString)).
 
 
 // LOOP+CONDICIONAL
@@ -128,7 +128,7 @@ console.log(segundaDose("Barbara"));
 
 // Exercício 7 --------------------------------------------------------------------------------------
 
-const avisoAosAtrasados = () => {
+const avisoAosAtrasados = () => {.
     const usuarios = [
         { nome: "Artur", imunizacao: "incompleta" },
         { nome: "Barbara", imunizacao: "completa" },
