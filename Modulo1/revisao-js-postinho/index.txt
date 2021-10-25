@@ -51,41 +51,108 @@ console.log(verificaSeEMaior(321, 2156));
 
 // Exercício 3------------------------------------------------------------------------------------
 
-const cadastro = () => {
-    const usuario = []
-    const nomeDoUsuario = prompt("digite seu nome")
-    const anoDeNascimento = prompt("digite seu ano de nascimento")
-    const idade = prompt("digite sua idade")
-    const nacionalidae = prompt("digite sua nacionalidade")
-    const senha = prompt("digite sua senha, ela deve ter mais de 6 dígitos")
-    //  Sua lógica aqui
-    if(idade>=18 && senha.length >=6 && nacionalidade === "brasileiro") {
-        console.log ('Usuário ${nome} cadastrado com sucesso')
-    usuarios.push({nome, anoDeNascimento, nacionalidade, senha})
-        console.log(usuarios)
+//Escreva uma função que receba do usuário **nomeDoUsuario**, **anoDeNascimento**, **senhaDoUsuario** e **nacionalidade** e ****guarde essas informações dentro de um array `usuários.` Porém só poderão se cadastrar:
 
+// Usuários maiores de 18 anos
+// A senha deve ter no mínimo 6 caracteres
+// E que a nacionalidade seja brasileira.
 
+const cadastro = () => 
+   const nome = prompt("digite seu nome")
+   const anoDeNascimento = prompt("digite seu ano de nascimento")
+   const senha = prompt("digite sua senha, ela deve ter mais de 6 dígitos")
+   const nacionalidade = prompt("nacionalidade")
+    
+    const usuarios = [];
+
+    const usuario = {
+        nome:nome,
+        anoDeNascimento: anoDeNascimento
+        senha: senha
+        nacionalidade: nacionalidade
     }
 
+const idadeDoUsuario = 2021 = usuario.anoDeNascimento
+
+if (idadeDoUsuario > 18) {
 }
-console.log(cadastro());
+
+if (usuario.senha.length < 6) {
+    return "Erro! Senha precisa ter no mínimo 6 caracteres."
+}
+
+if (usuario.nacionalidade 1== 'Br'){
+    return "Erro! Usuário precisa ter nacionalidade 'Br'."
+}
+
+   usuarios.push(usuario)
+
+   return usuarios
+);
+console.log(cadastro)
+
 
 // Exercício 4-----------------------------------------------------------------------------------------------
+//Escreva uma função que peça uma senha para o usuário e verifique se está é a mesma senha cadastrada por ele. 
+// Dentro da função defina uma senha válida Ex: const senha=”labenu”
+// Caso a senha seja válida imprima no console a mensagem (Usuário Logado)
+//Caso a senha seja inválida imprima no console (Senha Inválida)  
 
+ 
 const login = () => {
-const login = "lunnamaria"
-const senha = prompt("maria123")
-if(maria123 ===lunnamaria)
-console.log()
-else console.log("senha invalida")
+const SenhaDigitada = prompt("senha")
 
+const senhaRegistrada = "Lunna";
+
+if(SenhaDigitada === senhaRegistrada){
+    console.log("usuário logado!")
+} else {
+   console.log("senha Invalida!")   
 }
+return SenhaDigitada
+};
 
-console.log(login ${lunnamaria},senha ${lunna123}));
+console.log prompt(login ));
 
 // Exercício 5----------------------------------------------------------------------------------------------------
+//Escreva uma função que receba do usuário seu nome, e o nome da vacina que tomou.
+//E retorne a mensagens a seguir dependendo da vacina tomada.
+
+//`Olá ${nome}! A próxima dose da ${vacina} é daqui a ${tempo} dias.
+// Compareça no posto na data ${data}.`
+
+//Sabendo que as vacinas tem tempos diferentes  para a aplicação da segunda dose crie uma única variável ‘tempo” que mude seu valor dependendo da vacina informada pelo usuário, faça o mesmo com “data”.
+
+//Coronavac = 28 dias
+//Astrazenica = 90 dias
+//Pfizer = 90 dias
+
+
 
 const primeiraDose = () => {
+    const nome = prompt("nome")
+    const vacina = prompt("vacina")
+     
+     const tempo = 0
+     const date = ""
+
+     switch (vacina){
+         case "coronavac";
+         tempo = 28
+         break
+         case "astrazenica"
+         tempo = 90
+        case "pfizer";
+        tempo = 90
+        break
+        default:
+        return "Erro! vacina inválida."
+     }
+     
+    return `Olá ${nome}! A próxima dose da ${vacina} é daqui a ${tempo} dias.
+ Compareça no posto na data ${data}.`
+
+
 let tempo = 0
 let data = new Date ()
 
@@ -93,7 +160,7 @@ const nome = "Amanda"
 const vacina = "coronavac"
 
 if(vacina.tolowerCase()=== "coronavac"){
-    tempo = 30
+    tempo = 28
 } else if
 (vacina.tolowerCase ()=== "astrazenica"){
     tempo = 90
@@ -115,16 +182,27 @@ console.log(primeiraDose(toLocalDateString)).
 
 const segundaDose = (nomeDoUsuario) => {
     const usuarios = [
-        { nome: "Artur", imunizacao: "incompleta" },
-        { nome: "Barbara", imunizacao: "incompleta" },
+        { nome: "Artur", imunizacao: "incompleta" }
+        { nome: "Barbara", imunizacao: "incompleta" }
         { nome: "Carlos", imunizacao: "incompleta" }
     ]
-
-    //  Sua lógica aqui
-
-
+    for(let pessoa of usuarios) {
+        if(pessoa.nome === nomeDoUsuario){
+            acheiPessoas.push(pessoa)
+            return pessoa
+        }
+    }
 }
 console.log(segundaDose("Barbara"));
+
+const nuemeros = [1,2,3,4,5,6,7,8,9,10]
+
+//const mostraNumero = numeros.map((numero)=>{
+    if(numero >5){
+        console.log(numero >5)  
+    }
+})
+})
 
 // Exercício 7 --------------------------------------------------------------------------------------
 
@@ -136,9 +214,16 @@ const avisoAosAtrasados = () => {.
     ]
 
     //  Sua lógica aqui
-
+const pessoa = usuarios.filter((pessoa)=>{
+    if(pessoa.imunizacao === "incompleta"){
+        return true
+    }
+})
+OiPessoa.map((pessoa)=>{
+    console.log('Olá ${pessoa.nome}! Sua imunização está ${pessoa.imunizacao},por favor volte ao postinho para tomar a segunda dose.)
+})
 }
-console.log(avisoAosAtrasados());
+
 
 
 // DESAFIO------------------------------------------------------------------------------------------
@@ -170,6 +255,17 @@ const usuarios = [
     }
 
 ]
+const nome = prompt("Digite seu nome;")
+const ano = Number(prompt("Digite a datra de nascimento"))
+const nacionalidade = prompt("Qual é a sua nacionalidade") 
+const senhaPessoa = prompt("Digite sua senha")
+const vacinaPessoa = prompt("Qual vacina você tomou")
+const imunizacaoPessoa = prompt("Você já esta imunizado)
+
+if((2021 -novaPessoa.ano) > 18){
+    if(novaPessoa.senha.length
+    )
+}
 
 const cadastroDesafio = () => {
     //  Sua lógica aqui
@@ -180,17 +276,3 @@ const loginDesafio = () => {
     //  Sua lógica aqui
 }
 console.log(loginDesafio());
-
-const primeiraDoseDesafio = () => {
-//  Sua lógica aqui
-}
-console.log(primeiraDoseDesafio())
-const segundaDose = (nomeDoUsuario) => {
-    //  Sua lógica aqui
-}
-console.log(segundaDoseDesafio("ALGUM NOME AQUI"));
-
-const avisoAosAtrasadosDesafio = () => {
-    //  Sua lógica aqui
-}
-console.log(avisoAosAtrasadosDesafio());
